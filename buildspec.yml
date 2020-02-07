@@ -14,8 +14,13 @@ phases:
     commands:
       - echo Building...
       - npm run-script build
+      - echo "Printing Environment Variables..."
+      - env
+      - echo "Listing content..."
+      - ls
+
 artifacts:
   files:
-    - "build/*"
+    - "**/*"
   discard-paths: no
   base-directory: build
