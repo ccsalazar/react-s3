@@ -16,8 +16,6 @@ phases:
       - npm run-script build
       - echo "Listing content..."
       - ls
-      - ls ./build
-      - cd build
       - pwd
 
 artifacts:
