@@ -21,5 +21,7 @@ phases:
 
 artifacts:
   files:
-    - "build/*"
+    - "**/*"
   discard-paths: no
+  base-directory: build
+  name: react-s3-$(date +%Y-%m-%d)
