@@ -24,5 +24,5 @@ artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: build
+  base-directory: ${CODEBUILD_SRC_DIR}/build
   name: react-s3-$(date +%Y-%m-%d)
