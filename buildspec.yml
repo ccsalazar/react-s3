@@ -22,7 +22,6 @@ phases:
 
 artifacts:
   files:
-    - "**/*"
+    - "build/**/*"
   discard-paths: no
-  base-directory: ${CODEBUILD_SRC_DIR}/build
-  name: /
+  base-directory: build
