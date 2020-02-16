@@ -16,8 +16,7 @@ phases:
       - npm run-script build
       - echo "Listing content..."
       - ls
-      - pwd
-
+      - aws s3 sync ./build s3://${S3BucketDeploytDestination} --delete
 artifacts:
   files:
     - "**/*"
